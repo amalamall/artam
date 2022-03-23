@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
+  namespace: dev
 spec:
   selector:
     matchLabels:
@@ -17,3 +18,7 @@ spec:
         image: wil42/playground:v1
         ports:
         - containerPort: 8080
+        
+      syncPolicy:
+        syncOptions:
+        - CreateNamespace=true
