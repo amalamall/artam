@@ -7,6 +7,6 @@ spec:
   selector:
     app: wil-playground
   ports:
-  - port: 3000
+  - port: 88
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8888
