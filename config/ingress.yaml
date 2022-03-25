@@ -16,4 +16,4 @@ spec:
           service:
             name: wil-playground
             port:
-             number: 9090
+             number: 8888
